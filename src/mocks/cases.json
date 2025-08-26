@@ -1,0 +1,50 @@
+[
+  {
+    "id": "case-1",
+    "title": "E-commerce Automatizado",
+    "challenge": "Gestão manual de pedidos causava atrasos e erros operacionais",
+    "solution": "Automação completa com n8n: integração ERP + WhatsApp + tracking",
+    "impact": "Redução de 65% no tempo de processamento",
+    "metric": {
+      "value": 65,
+      "unit": "%",
+      "label": "Redução no tempo",
+      "chartData": [
+        { "name": "Antes", "value": 100 },
+        { "name": "Depois", "value": 35 }
+      ]
+    }
+  },
+  {
+    "id": "case-2", 
+    "title": "Logística Inteligente",
+    "challenge": "Rotas ineficientes geravam custos extras e atrasos nas entregas",
+    "solution": "IA para otimização de rotas + dashboard real-time + alertas automáticos",
+    "impact": "Economia de 40% nos custos de combustível",
+    "metric": {
+      "value": 40,
+      "unit": "%", 
+      "label": "Economia combustível",
+      "chartData": [
+        { "name": "Custos Anteriores", "value": 100 },
+        { "name": "Custos Atuais", "value": 60 }
+      ]
+    }
+  },
+  {
+    "id": "case-3",
+    "title": "Previsão de Demanda",
+    "challenge": "Estoque parado e rupturas frequentes por falta de previsibilidade",
+    "solution": "Modelo ML para previsão + dashboard executivo + alertas inteligentes",
+    "impact": "Melhoria de 85% na assertividade das previsões",
+    "metric": {
+      "value": 85,
+      "unit": "%",
+      "label": "Assertividade",
+      "chartData": [
+        { "name": "Acertos Antes", "value": 45 },
+        { "name": "Acertos Depois", "value": 85 }
+      ]
+    }
+  }
+]

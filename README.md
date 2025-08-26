@@ -1,73 +1,165 @@
-# Welcome to your Lovable project
+# sabIA developer - Landing Page
 
-## Project info
+Uma landing page moderna e responsiva para a sabIA developer, especializada em automação, IA e desenvolvimento sob medida.
 
-**URL**: https://lovable.dev/projects/1b62a122-d9db-48e0-8d25-fb038c2ed52b
+## 🚀 Tecnologias
 
-## How can I edit this code?
+- **React 18** + TypeScript
+- **Vite** (com plugin react-swc)
+- **TailwindCSS** + **shadcn/ui**
+- **Lucide React** (ícones)
+- **Recharts** (gráficos)
+- **React Router DOM**
+- **React Query**
 
-There are several ways of editing your application.
+## 📁 Estrutura do Projeto
 
-**Use Lovable**
+```
+src/
+├── components/          # Componentes reutilizáveis
+│   ├── ui/             # Componentes shadcn/ui
+│   ├── Navbar.tsx      # Navegação principal
+│   ├── ServiceCard.tsx # Card de serviços
+│   ├── CaseCard.tsx    # Card de casos de sucesso
+│   └── ...
+├── sections/           # Seções da landing page
+│   ├── Hero.tsx        # Seção hero
+│   ├── Services.tsx    # Seções de serviços
+│   ├── Cases.tsx       # Casos de sucesso
+│   └── ...
+├── mocks/              # Dados mockados
+│   ├── services.json   # Dados dos serviços
+│   ├── cases.json      # Casos de sucesso
+│   └── testimonials.json
+├── assets/             # Imagens e recursos
+└── pages/              # Páginas principais
+```
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/1b62a122-d9db-48e0-8d25-fb038c2ed52b) and start prompting.
+## 🎨 Design System
 
-Changes made via Lovable will be committed automatically to this repo.
+### Cores Principais
+- **Primary**: Ciano (#00E5FF) - `hsl(189, 100%, 50%)`
+- **Secondary**: Verde (#7CFF6B) - `hsl(102, 100%, 71%)`
+- **Background**: Dark gradient (#0B0F1A → #0F172A)
 
-**Use your preferred IDE**
+### Customização de Cores
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+Para alterar as cores do tema, edite o arquivo `src/index.css`:
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+```css
+:root {
+  --primary: 189 100% 50%; /* Ciano */
+  --secondary: 102 100% 71%; /* Verde */
+  --background: 220 34% 9%; /* Dark blue */
+}
+```
 
-Follow these steps:
+## 📱 WhatsApp Integration
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+Para configurar o número do WhatsApp:
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+1. Abra o arquivo `src/components/WhatsAppFloatingButton.tsx`
+2. Altere a variável `whatsappNumber`:
 
-# Step 3: Install the necessary dependencies.
-npm i
+```typescript
+const whatsappNumber = "5511999999999"; // Substitua pelo seu número
+```
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+3. Faça o mesmo nos arquivos:
+   - `src/sections/Hero.tsx`
+   - `src/sections/CTA.tsx`
+   - `src/sections/Footer.tsx`
+
+## 🚀 Como Executar
+
+1. **Instale as dependências:**
+```bash
+npm install
+```
+
+2. **Inicie o servidor de desenvolvimento:**
+```bash
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+3. **Acesse no navegador:**
+```
+http://localhost:8080
+```
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## 📝 Editando Conteúdo
 
-**Use GitHub Codespaces**
+### Serviços
+Edite `src/mocks/services.json` para modificar os serviços oferecidos.
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+### Casos de Sucesso
+Edite `src/mocks/cases.json` para atualizar os casos de sucesso.
 
-## What technologies are used for this project?
+### Depoimentos
+Edite `src/mocks/testimonials.json` para alterar os depoimentos de clientes.
 
-This project is built with:
+## 🔧 Formulário de Contato
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+O formulário está configurado com validação básica. Para integrar com um serviço real:
 
-## How can I deploy this project?
+1. Abra `src/components/LeadForm.tsx`
+2. Substitua a função `handleSubmit` mock por sua API real
+3. Configure o endpoint de destino
 
-Simply open [Lovable](https://lovable.dev/projects/1b62a122-d9db-48e0-8d25-fb038c2ed52b) and click on Share -> Publish.
+## 📊 Analytics & SEO
 
-## Can I connect a custom domain to my Lovable project?
+### Meta Tags
+As meta tags estão configuradas em `index.html` para SEO básico.
 
-Yes, you can!
+### Schema.org
+JSON-LD estruturado está implementado para melhor indexação pelos motores de busca.
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+## 🎯 Seções da Landing Page
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+1. **Hero** - Apresentação principal com CTAs
+2. **Serviços** - Cards com os serviços oferecidos  
+3. **Casos** - Casos de sucesso com métricas
+4. **Processo** - Como a empresa trabalha
+5. **Stack** - Tecnologias utilizadas
+6. **Prova Social** - Depoimentos e estatísticas
+7. **CTA** - Formulário de contato e CTAs finais
+8. **Footer** - Informações de contato e links
+
+## 🔒 Acessibilidade
+
+- Contraste AA implementado
+- Labels em todos os inputs
+- Aria-labels nos ícones
+- Navegação por teclado funcional
+- Textos alternativos nas imagens
+
+## 📱 Responsividade
+
+- Mobile-first design
+- Breakpoints: xs, sm, md, lg, xl, 2xl
+- Componentes adaptáveis
+- Menu mobile funcional
+
+## 🚀 Deploy
+
+Para fazer deploy:
+
+1. **Build do projeto:**
+```bash
+npm run build
+```
+
+2. **Preview local:**
+```bash
+npm run preview
+```
+
+3. **Deploy:** Use o serviço de sua preferência (Vercel, Netlify, etc.)
+
+## 📄 Licença
+
+Este projeto foi desenvolvido pela sabIA developer. Todos os direitos reservados.
+
+---
+
+**sabIA developer** - Automação e IA que geram resultado.

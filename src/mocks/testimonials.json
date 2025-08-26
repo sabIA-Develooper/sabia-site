@@ -1,0 +1,29 @@
+[
+  {
+    "id": "testimonial-1",
+    "name": "Carlos Mendes",
+    "position": "CEO",
+    "company": "LogiTech Soluções",
+    "content": "A sabIA developer transformou nossa operação. O que antes levava dias para processar, agora acontece em minutos. ROI foi imediato.",
+    "rating": 5,
+    "image": "/api/placeholder/64/64"
+  },
+  {
+    "id": "testimonial-2", 
+    "name": "Marina Silva",
+    "position": "Diretora de Operações",
+    "company": "Commerce Plus",
+    "content": "Automação impecável e suporte técnico excepcional. Reduziu nossa carga manual em 70% e eliminou erros operacionais.",
+    "rating": 5,
+    "image": "/api/placeholder/64/64"
+  },
+  {
+    "id": "testimonial-3",
+    "name": "Rafael Costa",
+    "position": "Head de TI", 
+    "company": "DataFlow Corp",
+    "content": "Implementação rápida e resultados concretos. Os dashboards facilitaram muito nossas tomadas de decisão estratégicas.",
+    "rating": 5,
+    "image": "/api/placeholder/64/64"
+  }
+]

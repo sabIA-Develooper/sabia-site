@@ -1,12 +1,29 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import Navbar from '@/components/Navbar';
+import WhatsAppFloatingButton from '@/components/WhatsAppFloatingButton';
+import Hero from '@/sections/Hero';
+import Services from '@/sections/Services';
+import Cases from '@/sections/Cases';
+import Process from '@/sections/Process';
+import Stack from '@/sections/Stack';
+import SocialProof from '@/sections/SocialProof';
+import CTA from '@/sections/CTA';
+import Footer from '@/sections/Footer';
 
 const Index = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
+    <div className="min-h-screen">
+      <Navbar />
+      <main>
+        <Hero />
+        <Services />
+        <Cases />
+        <Process />
+        <Stack />
+        <SocialProof />
+        <CTA />
+      </main>
+      <Footer />
+      <WhatsAppFloatingButton />
     </div>
   );
 };

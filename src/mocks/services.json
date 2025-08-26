@@ -1,0 +1,62 @@
+[
+  {
+    "id": "automacao-n8n",
+    "title": "Automação com n8n",
+    "description": "Workflows inteligentes, bots e orquestração de processos",
+    "icon": "Workflow",
+    "features": [
+      "Integração entre sistemas",
+      "Bots conversacionais",
+      "Automação de processos",
+      "Orquestração de APIs"
+    ]
+  },
+  {
+    "id": "software-logistica",
+    "title": "Software para Entregas & Logística",
+    "description": "Roteirização, tracking e dashboards em tempo real",
+    "icon": "Truck",
+    "features": [
+      "Otimização de rotas",
+      "Tracking em tempo real",
+      "Dashboards executivos",
+      "Gestão de frota"
+    ]
+  },
+  {
+    "id": "ciencia-dados",
+    "title": "Ciência de Dados",
+    "description": "ETL, visualização e métricas que importam",
+    "icon": "BarChart3",
+    "features": [
+      "Pipelines de dados",
+      "Dashboards interativos",
+      "KPIs automatizados",
+      "Relatórios customizados"
+    ]
+  },
+  {
+    "id": "ia-machine-learning",
+    "title": "IA & Machine Learning",
+    "description": "Previsão de demanda, chatbots e RAG personalizado",
+    "icon": "Brain",
+    "features": [
+      "Modelos preditivos",
+      "Chatbots inteligentes",
+      "Processamento de linguagem",
+      "Análise de sentimentos"
+    ]
+  },
+  {
+    "id": "desenvolvimento-medida",
+    "title": "Desenvolvimento Sob Medida",
+    "description": "Aplicações web/mobile e integrações personalizadas",
+    "icon": "Code2",
+    "features": [
+      "Aplicações web modernas",
+      "Apps mobile nativos",
+      "Integrações API",
+      "Arquitetura escalável"
+    ]
+  }
+]
