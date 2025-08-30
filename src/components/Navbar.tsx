@@ -41,13 +41,13 @@ const Navbar = () => {
             <img 
               src={sabiaLogo} 
               alt="sabIA developer" 
-              className="h-8 w-auto"
+              className="h-16 w-auto"
             />
             <div className="text-xl font-semibold">
               <span className="text-foreground">sabIA</span>
               <span className="text-muted-foreground font-light ml-1">developer</span>
             </div>
-          </div>
+          </div> 
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">

@@ -13,14 +13,14 @@
   },
   {
     "id": "software-logistica",
-    "title": "Software para Entregas & Logística",
-    "description": "Roteirização, tracking e dashboards em tempo real",
+    "title": "Soluções de Software & Tecnologia",
+    "description": "Entrega rápida, escalável e confiável",
     "icon": "Truck",
     "features": [
-      "Otimização de rotas",
-      "Tracking em tempo real",
-      "Dashboards executivos",
-      "Gestão de frota"
+      "Softwares personalizados",
+      "Entrega contínua (CI/CD)",
+      "Suporte e atualizações constantes",
+      "Dashboards de performance"
     ]
   },
   {

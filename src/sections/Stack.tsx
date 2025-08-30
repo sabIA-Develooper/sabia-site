@@ -79,30 +79,7 @@ const Stack = () => {
         </div>
 
         {/* Certifications & Partnerships */}
-        <div className="mt-16 text-center">
-          <h3 className="text-2xl font-semibold text-foreground mb-8">
-            Certificações & Parcerias
-          </h3>
-          
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 items-center opacity-60">
-            <div className="glass p-6 rounded-xl hover:opacity-100 transition-opacity">
-              <div className="text-lg font-semibold text-primary">GCP</div>
-              <div className="text-xs text-muted-foreground">Certified Partner</div>
-            </div>
-            <div className="glass p-6 rounded-xl hover:opacity-100 transition-opacity">
-              <div className="text-lg font-semibold text-primary">AWS</div>
-              <div className="text-xs text-muted-foreground">Solution Partner</div>
-            </div>
-            <div className="glass p-6 rounded-xl hover:opacity-100 transition-opacity">
-              <div className="text-lg font-semibold text-primary">n8n</div>
-              <div className="text-xs text-muted-foreground">Expert Partner</div>
-            </div>
-            <div className="glass p-6 rounded-xl hover:opacity-100 transition-opacity">
-              <div className="text-lg font-semibold text-primary">OpenAI</div>
-              <div className="text-xs text-muted-foreground">API Partner</div>
-            </div>
-          </div>
-        </div>
+        
       </div>
     </section>
   );
