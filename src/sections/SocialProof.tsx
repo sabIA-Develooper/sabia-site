@@ -68,7 +68,7 @@ const SocialProof = () => {
           ))}
         </div>
 
-        {/* Testimonials */}
+        {/* Testimonials 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-16">
           {testimonials.map((testimonial: any, index: number) => (
             <TestimonialCard
@@ -83,6 +83,7 @@ const SocialProof = () => {
             />
           ))}
         </div>
+        */}
 
         {/* Awards & Recognition */}
         <div className="glass p-8 rounded-2xl text-center">

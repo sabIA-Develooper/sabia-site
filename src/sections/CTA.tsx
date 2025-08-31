@@ -95,8 +95,8 @@ const CTA = () => {
               <h4 className="font-semibold text-foreground mb-4">Informações de contato</h4>
               <div className="space-y-3 text-sm text-muted-foreground">
                 <p>📧 contato@sabiadeveloper.com</p>
-                <p>📱 WhatsApp: +55 (11) 99999-9999</p>
-                <p>🕒 Atendimento: Seg-Sex, 9h às 18h</p>
+                <p>📱 WhatsApp: +55 (79) 8823-3880</p>
+                <p>🕒 Atendimento: Seg-Seg, 24h</p>
                 <p>⚡ Resposta via WhatsApp: até 2h</p>
               </div>
             </div>

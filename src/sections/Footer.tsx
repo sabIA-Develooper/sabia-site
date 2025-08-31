@@ -96,7 +96,7 @@ const Footer = () => {
                   onClick={handleWhatsAppClick}
                   className="hover:text-primary transition-colors"
                 >
-                  +55 (11) 99999-9999
+                  +55 (79) 8823-3880
                 </button>
               </li>
               <li className="flex items-center space-x-3 text-sm text-muted-foreground">
@@ -110,11 +110,11 @@ const Footer = () => {
               </li>
               <li className="flex items-center space-x-3 text-sm text-muted-foreground">
                 <MapPin size={16} className="text-primary flex-shrink-0" />
-                <span>São Paulo, SP - Brasil</span>
+                <span>Sergipe, SE - Brasil</span>
               </li>
               <li className="flex items-center space-x-3 text-sm text-muted-foreground">
                 <Clock size={16} className="text-primary flex-shrink-0" />
-                <span>Seg-Sex, 9h às 18h</span>
+                <span>Seg-Seg, 24h</span>
               </li>
             </ul>
           </div>
