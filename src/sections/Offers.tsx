@@ -4,9 +4,9 @@ import { Button } from '@/components/ui/button';
 const Offers = () => {
   const whatsappNumber = "557999707310";
   
-  const handleWhatsAppClick = (offerType: string) => {
+  const handleWhatsAppClick = (offerType: string, utmSource: string) => {
     const message = `Olá, vim pelo site da sabIA Developer. Quero falar sobre: ${offerType}.`;
-    const url = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
+    const url = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}&utm_source=${utmSource}&utm_medium=site`;
     window.open(url, '_blank', 'noopener');
   };
 
@@ -22,7 +22,8 @@ const Offers = () => {
         'Analytics e métricas'
       ],
       ctaText: 'Começar pelo WhatsApp',
-      offerType: 'Automação no WhatsApp & IA'
+      offerType: 'Automação no WhatsApp & IA',
+      utmSource: 'oferta-automacao'
     },
     {
       icon: Globe,
@@ -35,7 +36,8 @@ const Offers = () => {
         'Integrações CRM/ERP/Gateways'
       ],
       ctaText: 'Quero meu projeto',
-      offerType: 'Sites & Apps'
+      offerType: 'Sites & Apps',
+      utmSource: 'oferta-sites-apps'
     },
     {
       icon: Database,
@@ -48,7 +50,8 @@ const Offers = () => {
         'ETL/ELT automatizado'
       ],
       ctaText: 'Ver possibilidades',
-      offerType: 'Integrações & BI'
+      offerType: 'Integrações & BI',
+      utmSource: 'oferta-integracoes'
     }
   ];
 
@@ -112,7 +115,7 @@ const Offers = () => {
               </ul>
               
               <Button
-                onClick={() => handleWhatsAppClick(offer.offerType)}
+                onClick={() => handleWhatsAppClick(offer.offerType, offer.utmSource)}
                 className="w-full bg-primary hover:bg-primary/90 text-primary-foreground min-h-[48px]"
               >
                 {offer.ctaText}
@@ -147,7 +150,7 @@ const Offers = () => {
           <div className="text-center">
             <Button
               size="lg"
-              onClick={() => handleWhatsAppClick('Priorizar meu projeto')}
+              onClick={() => handleWhatsAppClick('Priorizar meu projeto', 'oferta-apoio')}
               className="bg-secondary hover:bg-secondary/90 text-secondary-foreground px-8 py-6 text-lg font-semibold min-h-[48px]"
             >
               Quero priorizar meu projeto

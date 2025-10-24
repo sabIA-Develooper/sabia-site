@@ -45,7 +45,7 @@ const Navbar = () => {
             />
             <div className="text-xl font-semibold">
               <span className="text-foreground">sabIA</span>
-              <span className="text-muted-foreground font-light ml-1">developer</span>
+              <span className="text-muted-foreground font-light ml-1">Developer</span>
             </div>
           </div> 
 

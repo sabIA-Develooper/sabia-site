@@ -5,7 +5,6 @@ import WhySabia from '@/sections/WhySabia';
 import SocialProof from '@/sections/SocialProof';
 import CTA from '@/sections/CTA';
 import Footer from '@/sections/Footer';
-import WhatsAppFloatingButton from '@/components/WhatsAppFloatingButton';
 
 const Index = () => {
   return (
@@ -17,7 +16,6 @@ const Index = () => {
       <SocialProof />
       <CTA />
       <Footer />
-      <WhatsAppFloatingButton />
     </div>
   );
 };

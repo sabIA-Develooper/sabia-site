@@ -87,7 +87,7 @@ const CTA = () => {
               <div className="space-y-3 text-sm text-muted-foreground">
                 <p>📧 sabiadeveloper@gmail.com</p>
                 <p>📱 WhatsApp: +55 (79) 9970-7310</p>
-                <p>🕒 Atendimento: seg–sex</p>
+                <p>🕒 Atendimento: seg–dom</p>
                 <p>⚡ Resposta via WhatsApp: até 2h</p>
               </div>
             </div>

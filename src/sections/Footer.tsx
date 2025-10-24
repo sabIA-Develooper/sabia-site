@@ -32,21 +32,15 @@ const Footer = () => {
                 alt="sabIA developer" 
                 className="h-8 w-auto"
               />
-              <div className="text-xl font-semibold">
-                <span className="text-foreground">sabIA</span>
-                <span className="text-muted-foreground font-light ml-1">developer</span>
-              </div>
+            <div className="text-xl font-semibold">
+              <span className="text-foreground">sabIA</span>
+              <span className="text-muted-foreground font-light ml-1">Developer</span>
+            </div>
             </div>
             
             <p className="text-muted-foreground mb-4 max-w-md">
               Automação e IA que geram resultado.
             </p>
-            
-            <div className="glass inline-block px-4 py-2 rounded-lg">
-              <p className="text-sm text-foreground font-medium">
-                ⚠️ Operação em crescimento — vagas limitadas por sprint.
-              </p>
-            </div>
           </div>
 
           {/* Quick Links */}
@@ -123,7 +117,7 @@ const Footer = () => {
               </li>
               <li className="flex items-center space-x-3 text-sm text-muted-foreground">
                 <Clock size={16} className="text-primary flex-shrink-0" />
-                <span>seg–sex</span>
+                <span>seg–dom</span>
               </li>
             </ul>
           </div>
@@ -133,7 +127,7 @@ const Footer = () => {
         <div className="border-t border-border/30 mt-12 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <div className="text-sm text-muted-foreground">
-              © {currentYear} sabIA developer. Todos os direitos reservados.
+              © {currentYear} sabIA Developer. Todos os direitos reservados.
             </div>
             
             <Button
