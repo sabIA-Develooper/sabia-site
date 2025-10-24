@@ -2,8 +2,8 @@ import { MessageCircle } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 const WhatsAppFloatingButton = () => {
-  const whatsappNumber = "5511999999999"; // Substitua pelo número real
-  const message = "Olá! Gostaria de saber mais sobre os serviços da sabIA developer.";
+  const whatsappNumber = "557999707310";
+  const message = "Olá, vim pelo site da sabIA Developer. Quero falar sobre: [Programação | Automações | Site/App | Integrações].";
   
   const handleWhatsAppClick = () => {
     const url = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;

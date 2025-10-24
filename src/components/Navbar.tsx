@@ -16,9 +16,9 @@ const Navbar = () => {
   }, []);
 
   const navItems = [
-    { label: 'Serviços', href: '#servicos' },
-    { label: 'Casos', href: '#casos' },
-    { label: 'Processo', href: '#processo' },
+    { label: 'Ofertas', href: '#ofertas' },
+    { label: 'Por que sabIA?', href: '#por-que' },
+    { label: 'Métricas', href: '#metricas' },
     { label: 'Contato', href: '#contato' }
   ];
 
@@ -55,7 +55,7 @@ const Navbar = () => {
               <button
                 key={item.href}
                 onClick={() => scrollToSection(item.href)}
-                className="text-muted-foreground hover:text-primary transition-colors"
+                className="text-muted-foreground hover:text-primary transition-colors text-base"
               >
                 {item.label}
               </button>
@@ -63,7 +63,7 @@ const Navbar = () => {
             <Button 
               variant="default" 
               onClick={() => scrollToSection('#contato')}
-              className="bg-primary hover:bg-primary/90 text-primary-foreground"
+              className="bg-primary hover:bg-primary/90 text-primary-foreground min-h-[44px]"
             >
               Falar no WhatsApp
             </Button>
@@ -90,7 +90,7 @@ const Navbar = () => {
                 <button
                   key={item.href}
                   onClick={() => scrollToSection(item.href)}
-                  className="text-left text-muted-foreground hover:text-primary transition-colors"
+                  className="text-left text-muted-foreground hover:text-primary transition-colors text-base min-h-[44px] py-2"
                 >
                   {item.label}
                 </button>
@@ -98,7 +98,7 @@ const Navbar = () => {
               <Button 
                 variant="default" 
                 onClick={() => scrollToSection('#contato')}
-                className="bg-primary hover:bg-primary/90 text-primary-foreground w-full"
+                className="bg-primary hover:bg-primary/90 text-primary-foreground w-full min-h-[48px]"
               >
                 Falar no WhatsApp
               </Button>

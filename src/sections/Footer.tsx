@@ -1,15 +1,16 @@
 import { MessageCircle, Mail, MapPin, Clock } from 'lucide-react';
+import { Button } from '@/components/ui/button';
 import sabiaLogo from '@/assets/sabia-logo.png';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
   
-  const whatsappNumber = "5511999999999";
-  const message = "Olá! Gostaria de saber mais sobre os serviços da sabIA developer.";
+  const whatsappNumber = "557999707310";
+  const message = "Olá, vim pelo site da sabIA Developer. Quero falar sobre: [Programação | Automações | Site/App | Integrações].";
 
   const handleWhatsAppClick = () => {
     const url = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
-    window.open(url, '_blank');
+    window.open(url, '_blank', 'noopener');
   };
 
   const scrollToSection = (href: string) => {
@@ -37,13 +38,14 @@ const Footer = () => {
               </div>
             </div>
             
-            <p className="text-muted-foreground mb-6 max-w-md">
-              Automação e IA que geram resultado. Transformamos operações manuais 
-              em processos inteligentes e escaláveis.
+            <p className="text-muted-foreground mb-4 max-w-md">
+              Automação e IA que geram resultado.
             </p>
             
-            <div className="text-sm text-muted-foreground">
-              <p className="font-medium text-primary mb-2">Automação e IA que geram resultado.</p>
+            <div className="glass inline-block px-4 py-2 rounded-lg">
+              <p className="text-sm text-foreground font-medium">
+                ⚠️ Operação em crescimento — vagas limitadas por sprint.
+              </p>
             </div>
           </div>
 
@@ -53,26 +55,26 @@ const Footer = () => {
             <ul className="space-y-3">
               <li>
                 <button 
-                  onClick={() => scrollToSection('#servicos')}
+                  onClick={() => scrollToSection('#ofertas')}
                   className="text-muted-foreground hover:text-primary transition-colors text-sm"
                 >
-                  Serviços
+                  Ofertas
                 </button>
               </li>
               <li>
                 <button 
-                  onClick={() => scrollToSection('#casos')}
+                  onClick={() => scrollToSection('#ofertas')}
                   className="text-muted-foreground hover:text-primary transition-colors text-sm"
                 >
-                  Casos de Sucesso
+                  Automação & IA
                 </button>
               </li>
               <li>
                 <button 
-                  onClick={() => scrollToSection('#processo')}
+                  onClick={() => scrollToSection('#ofertas')}
                   className="text-muted-foreground hover:text-primary transition-colors text-sm"
                 >
-                  Como Trabalhamos
+                  Integrações & BI
                 </button>
               </li>
               <li>
@@ -81,6 +83,13 @@ const Footer = () => {
                   className="text-muted-foreground hover:text-primary transition-colors text-sm"
                 >
                   Contato
+                </button>
+              </li>
+              <li>
+                <button 
+                  className="text-muted-foreground hover:text-primary transition-colors text-sm"
+                >
+                  Política de Privacidade
                 </button>
               </li>
             </ul>
@@ -96,16 +105,16 @@ const Footer = () => {
                   onClick={handleWhatsAppClick}
                   className="hover:text-primary transition-colors"
                 >
-                  +55 (79) 8823-3880
+                  +55 (79) 9970-7310
                 </button>
               </li>
               <li className="flex items-center space-x-3 text-sm text-muted-foreground">
                 <Mail size={16} className="text-primary flex-shrink-0" />
                 <a 
-                  href="mailto:contato@sabiadeveloper.com"
+                  href="mailto:sabiadeveloper@gmail.com"
                   className="hover:text-primary transition-colors"
                 >
-                  contato@sabiadeveloper.com
+                  sabiadeveloper@gmail.com
                 </a>
               </li>
               <li className="flex items-center space-x-3 text-sm text-muted-foreground">
@@ -114,7 +123,7 @@ const Footer = () => {
               </li>
               <li className="flex items-center space-x-3 text-sm text-muted-foreground">
                 <Clock size={16} className="text-primary flex-shrink-0" />
-                <span>Seg-Seg, 24h</span>
+                <span>seg–sex</span>
               </li>
             </ul>
           </div>
@@ -127,14 +136,14 @@ const Footer = () => {
               © {currentYear} sabIA developer. Todos os direitos reservados.
             </div>
             
-            <div className="flex space-x-6 text-sm text-muted-foreground">
-              <button className="hover:text-primary transition-colors">
-                Política de Privacidade
-              </button>
-              <button className="hover:text-primary transition-colors">
-                Termos de Uso
-              </button>
-            </div>
+            <Button
+              onClick={handleWhatsAppClick}
+              variant="outline"
+              className="border-primary/30 text-primary hover:bg-primary/10 min-h-[44px]"
+            >
+              <MessageCircle size={18} className="mr-2" />
+              Fale no WhatsApp
+            </Button>
           </div>
         </div>
       </div>

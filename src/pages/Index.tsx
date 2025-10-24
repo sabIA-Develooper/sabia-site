@@ -1,27 +1,21 @@
 import Navbar from '@/components/Navbar';
-import WhatsAppFloatingButton from '@/components/WhatsAppFloatingButton';
 import Hero from '@/sections/Hero';
-import Services from '@/sections/Services';
-import Cases from '@/sections/Cases';
-import Process from '@/sections/Process';
-import Stack from '@/sections/Stack';
+import Offers from '@/sections/Offers';
+import WhySabia from '@/sections/WhySabia';
 import SocialProof from '@/sections/SocialProof';
 import CTA from '@/sections/CTA';
 import Footer from '@/sections/Footer';
+import WhatsAppFloatingButton from '@/components/WhatsAppFloatingButton';
 
 const Index = () => {
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen bg-background">
       <Navbar />
-      <main>
-        <Hero />
-        <Services />
-        <Cases />
-        <Process />
-        <Stack />
-        <SocialProof />
-        <CTA />
-      </main>
+      <Hero />
+      <Offers />
+      <WhySabia />
+      <SocialProof />
+      <CTA />
       <Footer />
       <WhatsAppFloatingButton />
     </div>

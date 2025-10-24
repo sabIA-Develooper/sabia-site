@@ -3,16 +3,16 @@ import MetricBadge from '@/components/MetricBadge';
 import { ArrowRight, Play } from 'lucide-react';
 
 const Hero = () => {
-  const whatsappNumber = "5511999999999";
-  const message = "Olá! Quero saber mais sobre automação e IA para minha empresa.";
+  const whatsappNumber = "557999707310";
+  const message = "Olá, vim pelo site da sabIA Developer. Quero falar sobre: [Programação | Automações | Site/App | Integrações].";
 
   const handleWhatsAppClick = () => {
     const url = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
-    window.open(url, '_blank');
+    window.open(url, '_blank', 'noopener');
   };
 
-  const scrollToPortfolio = () => {
-    const element = document.querySelector('#casos');
+  const scrollToOffers = () => {
+    const element = document.querySelector('#ofertas');
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
     }
@@ -25,19 +25,17 @@ const Hero = () => {
           {/* Main Headline */}
           <div className="animate-fade-in">
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-foreground mb-6 leading-tight">
-              IA aplicada,{' '}
+              Automação e Programação{' '}
               <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
-                automação inteligente
-              </span>{' '}
-              e software sob medida.
+                que destravam seu crescimento
+              </span>
             </h1>
           </div>
 
           {/* Subheadline */}
           <div className="animate-slide-in-left" style={{ animationDelay: '0.2s' }}>
             <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-4xl mx-auto leading-relaxed">
-              A <span className="font-semibold text-primary">sabIA developer</span> integra n8n, Ciência de Dados e Machine Learning 
-              para turbinar sua operação.
+              WhatsApp, IA, sites e integrações — do diagnóstico ao go-live com entregas semanais.
             </p>
           </div>
 
@@ -46,27 +44,26 @@ const Hero = () => {
             <Button
               size="lg"
               onClick={handleWhatsAppClick}
-              className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-3 text-lg font-semibold transition-all hover:scale-105 hover:shadow-xl"
+              className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-6 md:py-3 text-lg font-semibold transition-all hover:scale-105 hover:shadow-xl w-full sm:w-auto min-h-[48px]"
             >
-              Falar no WhatsApp
+              Falar no WhatsApp agora
               <ArrowRight size={20} className="ml-2" />
             </Button>
             <Button
               size="lg"
               variant="outline"
-              onClick={scrollToPortfolio}
-              className="border-primary/30 text-primary hover:bg-primary/10 px-8 py-3 text-lg font-semibold transition-all hover:scale-105"
+              onClick={scrollToOffers}
+              className="border-primary/30 text-primary hover:bg-primary/10 px-8 py-6 md:py-3 text-lg font-semibold transition-all hover:scale-105 w-full sm:w-auto min-h-[48px]"
             >
-              <Play size={20} className="mr-2" />
-              Ver portfólio
+              Ver ofertas
             </Button>
           </div>
 
           {/* Badges */}
           <div className="flex flex-wrap justify-center gap-4 mb-16 animate-fade-in" style={{ animationDelay: '0.6s' }}>
-            <MetricBadge label="SLA configurável" />
-            <MetricBadge label="Entrega em sprints" />
-            <MetricBadge label="Stack moderna" />
+            <MetricBadge label="Entregas semanais" />
+            <MetricBadge label="Diagnóstico gratuito" />
+            <MetricBadge label="Resposta em 2h" />
           </div>
 
           {/* Animated Background Shapes */}
